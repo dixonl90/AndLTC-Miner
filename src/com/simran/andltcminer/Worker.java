@@ -70,6 +70,10 @@ public class Worker extends Observable implements Runnable {
 		return hashes.get();
 	}
 	
+	public boolean getStatus() {
+		return running;
+	}
+	
 	private volatile boolean running = false;
 	
 	public synchronized void stop() {
